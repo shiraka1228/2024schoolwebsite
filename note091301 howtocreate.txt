@@ -1,0 +1,4 @@
+三>終端>新增終端
+輸入指令已進行同步
+指令:
+git config --global user.name ''
