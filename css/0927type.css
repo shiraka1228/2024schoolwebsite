@@ -10,3 +10,43 @@ body{
 header{  
         background: url("../images/tokyo.jpg"); 
         border: solid #fff 3px;     padding: 5px 0px 10px 0px;  }
+
+#menu{
+        float: left;
+
+ }
+ #menu ul{
+        list-style: none;
+        padding: 0px;
+        margin-left: 100px;
+ }
+ menu ul li a{
+        color: #fff;
+        text-decoration: none;
+        padding-top: 0px;
+        height: 30px;
+        width: 80px;
+        float: left;
+        display: block;
+        text-align: center;
+ }
+ #menu a:hover{
+        color: #f00;
+        background: linear-gradient(#000,#666);
+ }
+ 
+ #content{
+        width: 680px;
+ }
+
+ #left{
+        float: left;
+        width: 200px;
+        padding-left: 10px;
+ }
+
+ #right{
+        float: right;
+        width: 450px;
+ }
+ 
