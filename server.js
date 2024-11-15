@@ -6,6 +6,10 @@ var server = express();
 //web root
 server.use(express.static(__dirname+"/1018/AgencyProject"));
 
+var DB = require("nedb-promises"); 
+var Profolio = DB.create(__dirname+"/profolio.db");  
+Profolio.insert({modal: "#portfolioModal1", imgSrc:"roundicons.png", heading:"Round Icons", text:"Graphic Design"})
+
 server.get("/services",(req,res)=>{
 //desk db
 var Services=[
