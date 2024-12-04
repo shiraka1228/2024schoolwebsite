@@ -20,12 +20,46 @@
 <body>
 
     <div id="header"><!--最上面的圖樣式-->
-        <div class="container">
-
-            <div id="top1">
-                <h1>Welcome</h1>
-
+        <div class="container-fluid">
+            <div class="row">
+                
+                <div class="thetop" ><!--最上面的跑馬燈-->
+                    <div class="w3-content w3-section ">
+                        <img class="top col-lg-12 col-md-12 col-sm-12" src="img2/cr1.png">
+                        <img class="top col-lg-12 col-md-12 col-sm-12" src="img2/cr2.png">
+                        <img class="top col-lg-12 col-md-12 col-sm-12" src="img2/cr3.PNG">
+                      </div>
+                      
+                      <script>
+                      var myIndex = 0;
+                      carousel();
+                      
+                      function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("top col-lg-12 col-md-12 col-sm-12");
+                        for (i = 0; i < x.length; i++) {
+                          x[i].style.display = "none";  
+                        }
+                        myIndex++;
+                        if (myIndex > x.length) {myIndex = 1}    
+                        x[myIndex-1].style.display = "block";  
+                        setTimeout(carousel, 2000); // Change image every 2 seconds
+                      }
+                      </script>
+                </div>
+                <div class="space">
+                    
+                </div>
+                <div class="col-lg-12 text-center">
+                    <h1>WELCOME TO MY WEBSITE</h1>
+                </div>
             </div>
+
+            <div class="row">
+                
+            </div>
+
+            
 
 
 
