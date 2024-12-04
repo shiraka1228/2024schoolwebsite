@@ -37,3 +37,8 @@
         display: block;
        
      }
+
+     .menu a:hover{
+        color: rgb(255, 0, 111);
+       
+ }
