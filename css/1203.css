@@ -31,14 +31,59 @@
         padding-top: 0px;
         padding-left: 20px;
         padding-right: 20px;
+        
        
 
         float: left;
         display: block;
+       
        
      }
 
      .menu a:hover{
         color: rgb(255, 0, 111);
        
- }
+      }
+
+      .inter{
+         padding-top: 50px;
+      }
+
+      .interduce{
+         padding-top: 150px;
+         padding-bottom: 150px;
+      }
+
+      .work img{
+         padding-top: 10px;
+         padding-bottom: 10px;
+         padding-left: 10px;
+         padding-right: 10px;
+
+
+      }
+      
+
+      .foot{
+         background: #414141;
+         padding-top: 20px;
+         padding-bottom: 20px;
+
+      }
+      .foot h5 {
+         color: #ffffff;
+         
+
+      }
+      .foot h5 a{
+         color: #ffffff;
+         text-decoration: none;
+
+      }
+
+      .foot a:hover{
+         color: rgb(255, 0, 111);
+        
+       }
+
+       
