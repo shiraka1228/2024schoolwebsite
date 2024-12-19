@@ -8,8 +8,6 @@
     background-color: rgb(225, 225, 225);
     padding-bottom: 50px;
     color:rgb(0, 0, 0);;
-
-
 }
 
 
@@ -80,4 +78,10 @@
 
 .money{
     padding-bottom: 50px;
+}
+
+.err{
+    background-color: rgb(225, 225, 225);
+    padding-bottom: 50px;
+    color:rgb(0, 0, 0);;
 }
