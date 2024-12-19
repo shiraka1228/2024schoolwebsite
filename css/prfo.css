@@ -1,0 +1,83 @@
+
+.pfo1{
+    padding-top: 100px;
+    padding-bottom: 50px
+}
+
+.perfolio{
+    background-color: rgb(225, 225, 225);
+    padding-bottom: 50px;
+    color:rgb(0, 0, 0);;
+
+
+}
+
+
+/* 圖片懸浮時的效果 */
+.camera img:hover {
+    opacity: 0.7; /* 鼠標懸浮時圖片淡化 */
+    transform: scale(1.02); /* 圖片稍微放大 */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* 平滑過渡 */
+}
+
+.art{
+    padding-bottom: 50px
+
+}
+
+.so2{
+    padding-top: 150px
+}
+
+.so1 {
+    padding-bottom: 50px
+}
+
+
+
+/* 為卡片圖片容器設定初始樣式 */
+.card.hover-zoom {
+    border: 2px solid transparent; /* 預設無框線顏色 */
+    border-color:black;
+    transition: border-color 0.3s ease, transform 0.3s ease; /* 平滑過渡 */
+    overflow: hidden; /* 確保子元素不超出邊界 */
+  }
+  
+  /* 圖片的初始樣式 */
+  .card.hover-zoom img {
+    display: block; /* 消除圖片下方的間隙 */
+    width: 100%; /* 保持圖片自適應容器 */
+    height: auto;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* 添加透明度和縮放動畫 */
+  }
+
+
+  /* 鼠標懸浮時的效果 */
+  .card.hover-zoom:hover {
+    border-color: rgb(255, 0, 111); /* 鼠標懸浮時改變邊框顏色 */
+    transform: scale(1.02); /* 卡片整體稍微放大 */
+    
+  }
+  
+  .card.hover-zoom:hover img {
+    opacity: 0.7; /* 鼠標懸浮時圖片淡化 */
+  }
+
+  .card-body h5{
+    color: #8f8f8f;
+  }
+
+  .card-body p{
+    color: #b3b3b3;
+  }
+.prfocard p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.money{
+    padding-bottom: 50px;
+}
