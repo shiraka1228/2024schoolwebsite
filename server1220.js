@@ -4,7 +4,7 @@ var express = require("express");
 var server = express();
 
 //web root
-server.use(express.static(__dirname+"/web"));
+server.use(express.static(__dirname+"/web2024"));
 
 var DB = require("nedb-promises");
 var ProfolioDB = DB.create(__dirname+"/prfoart.db");
