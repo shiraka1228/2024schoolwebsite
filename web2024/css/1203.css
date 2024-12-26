@@ -11,10 +11,23 @@
          padding-top: 50px;
       }
 
+      .inter2{
+         padding-top: 50px;
+         padding-bottom: 50px;
+      }
+
+      .to h6{
+         padding-top: 10px;
+         padding-bottom: 50px;
+      }
+
       .interduce{
          padding-top: 150px;
          padding-bottom: 150px;
       }
+
+   
+      
 
       .work img{
          padding-top: 10px;
@@ -37,12 +50,12 @@
          padding-bottom: 20px;
 
       }
-      .foot h5 {
+      .foot h6 {
          color: #ffffff;
          
 
       }
-      .foot h5 a{
+      .foot h6 a{
          color: #ffffff;
          text-decoration: none;
 
