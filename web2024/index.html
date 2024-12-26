@@ -17,6 +17,11 @@
     <!-- 引入css樣式 -->
     <link rel="stylesheet" href="css/1203.css">
     <link rel="stylesheet" href="css/prfo.css">
+
+
+    <!-- 引入gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
@@ -100,7 +105,9 @@
                 
                 <div class="interduce col-lg-6 col-md-12 col-sm-12 text-center"><!--介紹文字-->
                     <h2>HELLOW!</h2>
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique repudiandae vel, placeat eveniet excepturi molestiae, cumque tempore doloremque, accusantium voluptatibus perspiciatis modi architecto praesentium quae in. Eum, voluptas voluptatum.</h4>
+                    <h5>我是家家!</h5>
+                    <h5>目前就讀台中科技大學多媒體設計</h5>
+                    <h5>:DDDDDDDDDDD</h5>
                 </div>
 
             </div>
@@ -137,8 +144,32 @@
            
 
         </div>
-
     </div>
+
+    <!--intreduce上移-->
+    <script>
+       gsap.fromTo(".intreduce", 
+        {
+            opacity: 0,          // 初始透明
+            y: 50                // 初始下移 50px
+        }, 
+        {
+            opacity: 1,          // 最終完全顯現
+            y: 0,                // 最終移動到原位
+            duration: 3,         // 動畫持續時間
+            ease: "power2.out",  // 緩動效果
+            scrollTrigger: {
+                trigger: ".intreduce", // 滾動觸發的目標
+                start: "top 80%",     // 滾動到目標時開始動畫
+                end: "bottom 60%",    // 滾動離開目標時結束動畫
+                toggleActions: "restart restart pause pause", // 滾動時播放動畫
+            }
+        }
+    );
+    
+    </script>
+
+    
 
     <div class="perfolio"><!--作品集/攝影/繪畫-->
       <div class="container py-5">
@@ -151,32 +182,32 @@
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-4">
             <div class="col">
               <div class="camera shadow-sm">
-                  <a href="img2/cr1.png" target="_blank">
-                    <img src="img2/cr1.png" class="card-img-top" alt="作品1">
+                  <a href="img2/pto1.jpg" target="_blank">
+                    <img src="img2/pto1.jpg" class="card-img-top" alt="作品1">
                   </a>
               </div>
             </div>
             
             <div class="col">
               <div class="camera shadow-sm">
-                  <a href="img2/cr1.png" target="_blank">
-                    <img src="img2/cr1.png" class="card-img-top" alt="作品1">
+                  <a href="img2/pto2.jpg" target="_blank">
+                    <img src="img2/pto2.jpg" class="card-img-top" alt="作品2">
                   </a>
               </div>
             </div>
 
             <div class="col">
               <div class="camera shadow-sm">
-                  <a href="img2/cr1.png" target="_blank">
-                    <img src="img2/cr1.png" class="card-img-top" alt="作品1">
+                  <a href="img2/pto3.jpg" target="_blank">
+                    <img src="img2/pto3.jpg" class="card-img-top" alt="作品3">
                   </a>
               </div>
             </div>
 
             <div class="col">
               <div class="camera shadow-sm">
-                  <a href="img2/cr1.png" target="_blank">
-                    <img src="img2/cr1.png" class="card-img-top" alt="作品1">
+                  <a href="img2/pto4.jpg" target="_blank">
+                    <img src="img2/pto4.jpg" class="card-img-top" alt="作品4">
                   </a>
               </div>
             </div>
@@ -195,12 +226,12 @@
             <div class="col">
               <div class="prfocard shadow-sm">
                 <div class="card hover-zoom">
-                  <a href="img2/cr1.png" target="_blank">
-                    <img src="img2/cr1.png" class="card-img-top" alt="作品1">
+                  <a href="img2/pf05.png" target="_blank">
+                    <img src="img2/pf05.png" class="card-img-top" alt="作品1">
                   </a>
                   <div class="card-body bg-dark">
-                    <h5 class="card-title text-center">作品標題 1</h5>
-                    <p class="card-text text-center">這是關於作品 1 的簡短描述。描述可以包括功能、特色或靈感來源。</p>
+                    <h5 class="card-title text-center">CHRISTMAS</h5>
+                    <p class="card-text text-center">刀劍亂舞同人作品</p>
                   </div>
                 </div>
               </div>
@@ -210,12 +241,12 @@
             <div class="col">
               <div class="prfocard shadow-sm">
                 <div class="card hover-zoom">
-                  <a href="img2/cr2.png" target="_blank">
-                    <img src="img2/cr2.png" class="card-img-top" alt="作品2">
+                  <a href="img2/cr3.PNG" target="_blank">
+                    <img src="img2/cr3.PNG" class="card-img-top" alt="作品2">
                   </a>
                   <div class="card-body bg-dark">
-                    <h5 class="card-title text-center">作品標題 2</h5>
-                    <p class="card-text text-center">這是關於作品 2 的簡短描述。描述可以包括功能、特色或靈感來源。</p>
+                    <h5 class="card-title text-center">BIRTHDAY</h5>
+                    <p class="card-text text-center">彩虹社同人作品</p>
                   </div>
                 </div>
               </div>
@@ -224,12 +255,12 @@
             <div class="col">
               <div class="prfocard shadow-sm">
                 <div class="card hover-zoom">
-                  <a href="img2/cr2.png" target="_blank">
-                    <img src="img2/cr2.png" class="card-img-top" alt="作品2">
+                  <a href="img2/fp06.png" target="_blank">
+                    <img src="img2/fp06.png" class="card-img-top" alt="作品2">
                   </a>
                   <div class="card-body bg-dark">
-                    <h5 class="card-title text-center">作品標題 2</h5>
-                    <p class="card-text text-center">這是關於作品 2 的簡短描述。描述可以包括功能、特色或靈感來源。</p>
+                    <h5 class="card-title text-center">少女レイ</h5>
+                    <p class="card-text text-center">彩虹社同人作品</p>
                   </div>
                 </div>
               </div>
@@ -243,8 +274,8 @@
                     <img src="img2/cr2.png" class="card-img-top" alt="作品2">
                   </a>
                   <div class="card-body bg-dark">
-                    <h5 class="card-title text-center">作品標題 2</h5>
-                    <p class="card-text text-center">這是關於作品 2 的簡短描述。描述可以包括功能、特色或靈感來源。</p>
+                    <h5 class="card-title text-center">404!</h5>
+                    <p class="card-text text-center">刀劍亂舞同人作品</p>
                   </div>
                 </div>
               </div>
@@ -259,6 +290,76 @@
         </div>
       </div>
     </div>
+
+    <!--perfolio上移-->
+    <script>
+      gsap.fromTo(".perfolio", 
+       {
+           opacity: 0,          // 初始透明
+           y: 50                // 初始下移 50px
+       }, 
+       {
+           opacity: 3,          // 最終完全顯現
+           y: 0,                // 最終移動到原位
+           duration: 1,         // 動畫持續時間
+           ease: "power2.out",  // 緩動效果
+           scrollTrigger: {
+               trigger: ".perfolio", // 滾動觸發的目標
+               start: "top 80%",     // 滾動到目標時開始動畫
+               end: "bottom 60%",    // 滾動離開目標時結束動畫
+               toggleActions: "restart restart pause pause", // 滾動時播放動畫
+           }
+       }
+   );
+   
+   </script>
+
+    <!--camera上移-->
+    <script>
+      gsap.fromTo(".camera", 
+       {
+           opacity: 0,          // 初始透明
+           y: 50                // 初始下移 50px
+       }, 
+       {
+           opacity: 3,          // 最終完全顯現
+           y: 0,                // 最終移動到原位
+           duration: 1,         // 動畫持續時間
+           ease: "power2.out",  // 緩動效果
+           scrollTrigger: {
+               trigger: ".camera", // 滾動觸發的目標
+               start: "top 80%",     // 滾動到目標時開始動畫
+               end: "bottom 60%",    // 滾動離開目標時結束動畫
+               toggleActions: "restart restart pause pause", // 滾動時播放動畫
+           }
+       }
+    );
+    
+    </script>
+    <!--art上移-->
+    <script>
+      gsap.fromTo(".art", 
+       {
+           opacity: 0,          // 初始透明
+           y: 50                // 初始下移 50px
+       }, 
+       {
+           opacity: 1,          // 最終完全顯現
+           y: 0,                // 最終移動到原位
+           duration: 3,         // 動畫持續時間
+           ease: "power2.out",  // 緩動效果
+           scrollTrigger: {
+               trigger: ".art", // 滾動觸發的目標
+               start: "top 80%",     // 滾動到目標時開始動畫
+               end: "bottom 60%",    // 滾動離開目標時結束動畫
+               toggleActions: "restart restart pause pause", // 滾動時播放動畫
+           }
+       }
+    );
+    
+    </script>
+
+   
 
     <div class="work"><!--委託事項-->
       <div class="com">
@@ -274,12 +375,12 @@
                     <div class="col">
                       <div class="prfocard shadow-sm">
                         <div class="card hover-zoom">
-                          <a href="img2/cr1.png" target="_blank">
-                            <img src="img2/cr1.png" class="card-img-top" alt="作品1">
+                          <a href="img2/wr1.png" target="_blank">
+                            <img src="img2/wr1.png" class="card-img-top" alt="作品1">
                           </a>
                           <div class="card-body bg-dark">
-                            <h5 class="card-title text-center">作品標題 1</h5>
-                            <p class="card-text text-center">這是關於作品 1 的簡短描述。描述可以包括功能、特色或靈感來源。</p>
+                            <h5 class="card-title text-center">雙人驚喜包</h5>
+                            <p class="card-text text-center">NTD800</p>
                           </div>
                         </div>
                       </div>
@@ -289,12 +390,12 @@
                     <div class="col">
                       <div class="prfocard shadow-sm">
                         <div class="card hover-zoom">
-                          <a href="img2/cr2.png" target="_blank">
-                            <img src="img2/cr2.png" class="card-img-top" alt="作品2">
+                          <a href="img2/wr2.jpg" target="_blank">
+                            <img src="img2/wr2.jpg" class="card-img-top" alt="作品2">
                           </a>
                           <div class="card-body bg-dark">
-                            <h5 class="card-title text-center">作品標題 2</h5>
-                            <p class="card-text text-center">這是關於作品 2 的簡短描述。描述可以包括功能、特色或靈感來源。</p>
+                            <h5 class="card-title text-center">單人驚喜包</h5>
+                            <p class="card-text text-center">NTD450</p>
                           </div>
                         </div>
                       </div>
@@ -303,12 +404,12 @@
                     <div class="col">
                       <div class="prfocard shadow-sm">
                         <div class="card hover-zoom">
-                          <a href="img2/cr2.png" target="_blank">
-                            <img src="img2/cr2.png" class="card-img-top" alt="作品2">
+                          <a href="img2/wr3q.jpg" target="_blank">
+                            <img src="img2/wr3q.jpg" class="card-img-top" alt="作品2">
                           </a>
                           <div class="card-body bg-dark">
-                            <h5 class="card-title text-center">作品標題 2</h5>
-                            <p class="card-text text-center">這是關於作品 2 的簡短描述。描述可以包括功能、特色或靈感來源。</p>
+                            <h5 class="card-title text-center">Q版</h5>
+                            <p class="card-text text-center">200NTD/人</p>
                           </div>
                         </div>
                       </div>
@@ -318,12 +419,12 @@
                     <div class="col">
                       <div class="prfocard shadow-sm">
                         <div class="card hover-zoom">
-                          <a href="img2/cr2.png" target="_blank">
-                            <img src="img2/cr2.png" class="card-img-top" alt="作品2">
+                          <a href="img2/wr5.jpg" target="_blank">
+                            <img src="img2/wr5.jpg" class="card-img-top" alt="作品2">
                           </a>
                           <div class="card-body bg-dark">
-                            <h5 class="card-title text-center">作品標題 2</h5>
-                            <p class="card-text text-center">這是關於作品 2 的簡短描述。描述可以包括功能、特色或靈感來源。</p>
+                            <h5 class="card-title text-center">頭貼</h5>
+                            <p class="card-text text-center">450NTD/人</p>
                           </div>
                         </div>
                       </div>
@@ -334,6 +435,29 @@
       </div>
 
     </div>
+
+    <!--work上移-->
+    <script>
+      gsap.fromTo(".work", 
+       {
+           opacity: 0,          // 初始透明
+           y: 50                // 初始下移 50px
+       }, 
+       {
+           opacity: 1,          // 最終完全顯現
+           y: 0,                // 最終移動到原位
+           duration: 3,         // 動畫持續時間
+           ease: "power2.out",  // 緩動效果
+           scrollTrigger: {
+               trigger: ".work", // 滾動觸發的目標
+               start: "top 80%",     // 滾動到目標時開始動畫
+               end: "bottom 60%",    // 滾動離開目標時結束動畫
+               toggleActions: "restart restart pause pause", // 滾動時播放動畫
+           }
+       }
+    );
+    
+    </script>
 
     <div class="worn"><!--版權聲明及警告-->
 
@@ -359,6 +483,29 @@
 
     </div>
 
+    <!--worn上移-->
+    <script>
+      gsap.fromTo(".worn", 
+       {
+           opacity: 0,          // 初始透明
+           y: 50                // 初始下移 50px
+       }, 
+       {
+           opacity: 1,          // 最終完全顯現
+           y: 0,                // 最終移動到原位
+           duration: 3,         // 動畫持續時間
+           ease: "power2.out",  // 緩動效果
+           scrollTrigger: {
+               trigger: ".worn", // 滾動觸發的目標
+               start: "top 80%",     // 滾動到目標時開始動畫
+               end: "bottom 60%",    // 滾動離開目標時結束動畫
+               toggleActions: "restart restart pause pause", // 滾動時播放動畫
+           }
+       }
+    );
+    
+    </script>
+
     <div class="conact"><!--聯絡方式-->
       <div class="conact1">
         <h1 class="so2 text-center">CONACT ME</h1>
@@ -367,19 +514,19 @@
           <div class="container">
             <div class="row">
               <div class="con col col-lg-4 col-md-4 col-sm-4">
-                <a href="">
+                <a href="https://www.facebook.com/people/%E5%AE%B6%E5%AE%B6/pfbid0uGPiWaM65tUp13jeMFrr84kNzZ3X9hihXMUGxLsfzS2ZBaZSzLLfvwfHaMNmQukal/?mibextid=ZbWKwL">
                   <img src="img2/fb.png" class="col-lg-12 col-md-12 col-sm-12" alt="作品2">
                 </a>
               </div>
 
               <div class="con col col-lg-4 col-md-4 col-sm-4">
-                <a href="">
+                <a href="https://www.instagram.com/shiraka1228/profilecard/?igsh=cXMwNzdrY2tnbDlu&fbclid=IwZXh0bgNhZW0CMTEAAR20-kj8cQgZzTTVz8A3LaG0sD0Jh1HCMtpTXF0R3o-xVy6neE0TomD8Cps_aem_5waYQqlJ8M7sk7fzvtq6YA">
                   <img src="img2/ig.png" class="col-lg-12 col-md-12 col-sm-12" alt="作品2">
                 </a>
               </div>
 
               <div class="con col col-lg-4 col-md-4 col-sm-4">
-                <a href="">
+                <a href="https://twitter.com/x/migrate?tok=7b2265223a222f53686972616b61313232383f743d75412d4a48677a673832625a4462326a376348742d7726733d3039266662636c69643d49775a58683062674e685a5730434d54454141523131504f4c494e737a325a2d6b50374a305f7a5331615f6d3477785171436845515f3367584965436f6a6d5375466a4632796f456a7a6376455f61656d5f66746166677755334f7a4b3271714e6b6b4c41785651222c2274223a313733353234353630357de9a257039876c95b025a6210234e16b7">
                   <img src="img2/x.png" class="col-lg-12 col-md-12 col-sm-12" alt="作品2">
                 </a>
               </div>
@@ -390,16 +537,39 @@
 
     </div>
 
+    <!--conact上移-->
+    <script>
+      gsap.fromTo(".conact", 
+       {
+           opacity: 0,          // 初始透明
+           y: 50                // 初始下移 50px
+       }, 
+       {
+           opacity: 1,          // 最終完全顯現
+           y: 0,                // 最終移動到原位
+           duration: 3,         // 動畫持續時間
+           ease: "power2.out",  // 緩動效果
+           scrollTrigger: {
+               trigger: ".conact", // 滾動觸發的目標
+               start: "top 80%",     // 滾動到目標時開始動畫
+               end: "bottom 60%",    // 滾動離開目標時結束動畫
+               toggleActions: "restart restart pause pause", // 滾動時播放動畫
+           }
+       }
+    );
+    
+    </script>
+
     <div class="footer"><!--頁腳-->
         <div class="container-fluid">
             <div class="row">
                 <div class="foot col-lg-6 col-md-6 col-sm-6 text-center">
-                    <h6>FACEBOOK:<a href="">家家</a></h6>
+                    <h6>FACEBOOK:<a href="https://www.facebook.com/people/%E5%AE%B6%E5%AE%B6/pfbid0uGPiWaM65tUp13jeMFrr84kNzZ3X9hihXMUGxLsfzS2ZBaZSzLLfvwfHaMNmQukal/?mibextid=ZbWKwL">家家</a></h6>
                     <h6>LINE:Lucy921228</h6>
                 </div>
                 <div class="foot col-lg-6 col-md-6 col-sm-6 text-center">
                     <h6>NUMBER:0966559627</h6>
-                    <h6>GMAIL:<a href="">lucy921228@gmail.com</a></h6>
+                    <h6>GMAIL:<a href="lucy921228@gmail.com">lucy921228@gmail.com</a></h6>
                 </div>
 
 
