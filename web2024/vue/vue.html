@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div class="col">
+          <div v-for="item in art2" :key="item.h5" class="prfocard shadow-sm">
+            <div class="card hover-zoom">
+              <a :href="item.picture" target="_blank">
+                <img :src="item.picture" class="card-img-top" :alt="item.ins">
+              </a>
+              <div class="card-body bg-dark">
+                <h5 class="card-title text-center">{{ item.h5 }}</h5>
+                <p class="card-text text-center">{{ item.text }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <script>
+      const app = Vue.createApp({
+        data() {
+          return {
+            art2: [] // 初始化空數組
+          };
+        },
+        mounted() {
+          // 請求伺服器數據
+          fetch("/art2")
+            .then(response => response.json())
+            .then(data => {
+              this.art2 = data; // 將數據綁定到 art2
+            })
+            .catch(error => console.error("Error fetching data:", error));
+        }
+      });
+      app.mount("#app");
+      </script>
+      
+</body>
+</html>

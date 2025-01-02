@@ -1,51 +1,22 @@
-//install: node js
-//install web server package: express >npm install express
 var express = require("express");
 var server = express();
 
-//web root
-server.use(express.static(__dirname+"/web2024"));
-
-//var DB = require("nedb-promises");
-//var ProfolioDB = DB.create(__dirname+"/prfoart.db");
-
-var DB = require("nedb-promises");
-var ProfolioDB = new DB({ filename: __dirname + "/prfoart.db", autoload: true });
+// 设置静态文件目录
+server.use(express.static(__dirname + "/web2024"));
 
 
- 
-// ProfolioDB.insert([
-//     { href: "#portfolioModal1", imgSrc: "img/portfolio/roundicons.png", title: "Round Icons", text: "Graphic Design" },
-//     { href: "#portfolioModal2", imgSrc: "img/portfolio/startup-framework.png", title: "Startup Framework", text: "Website Design" },
-//     { href: "#portfolioModal3", imgSrc: "img/portfolio/treehouse.png", title: "Treehouse", text: "Website Design" },
-//     { href: "#portfolioModal1", imgSrc: "img/portfolio/roundicons.png", title: "Round Icons", text: "Graphic Design" },
-//     { href: "#portfolioModal2", imgSrc: "img/portfolio/startup-framework.png", title: "Startup Framework", text: "Website Design" },
-//     { href: "#portfolioModal3", imgSrc: "img/portfolio/treehouse.png", title: "Treehouse", text: "Website Design" }
-// ])
 
-//server.get("/services", (req, res)=>{
-//    //DB find
-//    var Services=[
-//        {icon: "fa-shopping-cart", heading:"E-Commerce", text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."},
-//        {icon: "fa-laptop", heading:"Responsive Design", text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."}
+// 模拟数据库返回的数据
+//server.get("/art2", (req, res) => {
+//    // 返回数据的格式是 JSON
+//    var art2 = [
+//        { picture: "img2/cr3.PNG", ins: "E-Commerce", h5: "BIRTHDAY", text: "Happy Birthday" },
+//        { picture: "img2/cr4.PNG", ins: "Design", h5: "HOLIDAY", text: "Holiday Season" },
 //    ];
-//    res.send(Services);
+//    res.json(art2); // 返回 JSON 格式的数据
 //});
-//
-//server.get("/profolio", (req,res)=>{
-//      //DB
-//      ProfolioDB.find({}).then(results=>{
-//        if(results != null){
-//             res.send(results);
-//        }else{
-//            res.send("Error!");
-//        }
-//      })
-//     
-//
-//})
 
-
-server.listen(80, ()=>{
+// 启动服务器监听 80 端口
+server.listen(80, () => {
     console.log("Server is running at port 80.");
-})
+});
