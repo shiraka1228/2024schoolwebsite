@@ -311,68 +311,68 @@
 
     <!--perfolio上移-->
      <script>
-      gsap.fromTo(".perfolio", 
-      {
-           opacity: 0,          // 初始透明
-           y: 50                // 初始下移 50px
-       }, 
-       {
-           opacity: 1,          // 最終完全顯現
-           y: 0,                // 最終移動到原位
-           duration: 3,         // 動畫持續時間
-           ease: "power2.out",  // 緩動效果
-           scrollTrigger: {
-               trigger: ".work", // 滾動觸發的目標
-               start: "top 80%",     // 滾動到目標時開始動畫
-               end: "bottom 60%",    // 滾動離開目標時結束動畫
-               toggleActions: "restart restart pause pause", // 滾動時播放動畫
-           }
-       }
-    );
-   </script>
+       gsap.fromTo(".perfolio", 
+    {
+      opacity: 0,          // 初始透明
+      y: 50                // 初始下移 50px
+    }, 
+    {
+      opacity: 1,          // 最終完全顯現
+      y: 0,                // 最終移動到原位
+      duration: 3,         // 動畫持續時間
+      ease: "power2.out",  // 緩動效果
+      scrollTrigger: {
+        trigger: ".perfolio", // 觸發器應該是 ".perfolio"
+        start: "top 80%",     // 滾動到目標時開始動畫
+        end: "bottom 60%",    // 滾動離開目標時結束動畫
+        toggleActions: "restart restart pause pause", // 滾動時播放動畫
+      }
+    }
+  );
+</script>
 
     <!--camera上移-->
     <script>
       gsap.fromTo(".camera", 
       {
-           opacity: 0,          // 初始透明
-           y: 50                // 初始下移 50px
-       }, 
-       {
-           opacity: 1,          // 最終完全顯現
-           y: 0,                // 最終移動到原位
-           duration: 3,         // 動畫持續時間
-           ease: "power2.out",  // 緩動效果
-           scrollTrigger: {
-               trigger: ".work", // 滾動觸發的目標
-               start: "top 80%",     // 滾動到目標時開始動畫
-               end: "bottom 60%",    // 滾動離開目標時結束動畫
-               toggleActions: "restart restart pause pause", // 滾動時播放動畫
-           }
-       }
-    );
+      opacity: 0,          // 初始透明
+      y: 50                // 初始下移 50px
+    }, 
+    {
+      opacity: 1,          // 最終完全顯現
+      y: 0,                // 最終移動到原位
+      duration: 3,         // 動畫持續時間
+      ease: "power2.out",  // 緩動效果
+      scrollTrigger: {
+        trigger: ".perfolio", // 觸發器應該是 ".perfolio"
+        start: "top 80%",     // 滾動到目標時開始動畫
+        end: "bottom 60%",    // 滾動離開目標時結束動畫
+        toggleActions: "restart restart pause pause", // 滾動時播放動畫
+      }
+    }
+  );
     </script>
 
     <!--art上移-->
     <script>
       gsap.fromTo(".art", 
       {
-           opacity: 0,          // 初始透明
-           y: 50                // 初始下移 50px
-       }, 
-       {
-           opacity: 1,          // 最終完全顯現
-           y: 0,                // 最終移動到原位
-           duration: 3,         // 動畫持續時間
-           ease: "power2.out",  // 緩動效果
-           scrollTrigger: {
-               trigger: ".work", // 滾動觸發的目標
-               start: "top 80%",     // 滾動到目標時開始動畫
-               end: "bottom 60%",    // 滾動離開目標時結束動畫
-               toggleActions: "restart restart pause pause", // 滾動時播放動畫
-           }
-       }
-    );
+      opacity: 0,          // 初始透明
+      y: 50                // 初始下移 50px
+    }, 
+    {
+      opacity: 1,          // 最終完全顯現
+      y: 0,                // 最終移動到原位
+      duration: 3,         // 動畫持續時間
+      ease: "power2.out",  // 緩動效果
+      scrollTrigger: {
+        trigger: ".perfolio", // 觸發器應該是 ".perfolio"
+        start: "top 80%",     // 滾動到目標時開始動畫
+        end: "bottom 60%",    // 滾動離開目標時結束動畫
+        toggleActions: "restart restart pause pause", // 滾動時播放動畫
+      }
+    }
+  );
     
     </script>
 
