@@ -4,6 +4,15 @@ var server = express();
 // 设置静态文件目录
 server.use(express.static(__dirname + "/web2024"));
 
+ProfolioDB.insert([
+    { imgSrc: "img/portfolio/roundicons.png", title: "Round Icons", text: "Graphic Design" },
+    { imgSrc: "img/portfolio/startup-framework.png", title: "Startup Framework", text: "Website Design" },
+    { imgSrc: "img/portfolio/treehouse.png", title: "Treehouse", text: "Website Design" },
+    { imgSrc: "img/portfolio/roundicons.png", title: "Round Icons", text: "Graphic Design" },
+    { imgSrc: "img/portfolio/startup-framework.png", title: "Startup Framework", text: "Website Design" },
+    { imgSrc: "img/portfolio/treehouse.png", title: "Treehouse", text: "Website Design" }
+])
+
 
 
 // 模拟数据库返回的数据
