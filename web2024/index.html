@@ -186,39 +186,28 @@
         <h5 class="so1 text-center">ABOUT MY CAMERA PHOTOS</h5>
 
         <div class="camera"><!--攝影-->
-          <div class="row row-1g-1 row-cols-sm-2 row-cols-md-1 g-4">
-            <div class="col">
-              <div class="camera shadow-sm">
-                  <a href="img2/pto1.jpg" target="_blank">
-                    <img src="img2/pto1.jpg" class="card-img-top" alt="作品1">
-                  </a>
-              </div>
+          <div class="row g-4">
+            <div class="col-sm-12 col-md-6 col-lg-6 shadow-sm">
+              <a href="img2/pto1.jpg" target="_blank">
+                <img src="img2/pto1.jpg" class="card-img-top" alt="作品1">
+              </a>
             </div>
-            
-            <div class="col">
-              <div class="camera shadow-sm">
-                  <a href="img2/pto2.jpg" target="_blank">
-                    <img src="img2/pto2.jpg" class="card-img-top" alt="作品2">
-                  </a>
-              </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 shadow-sm">
+              <a href="img2/pto2.jpg" target="_blank">
+                <img src="img2/pto2.jpg" class="card-img-top" alt="作品2">
+              </a>
             </div>
-
-            <div class="col">
-              <div class="camera shadow-sm">
-                  <a href="img2/pto3.jpg" target="_blank">
-                    <img src="img2/pto3.jpg" class="card-img-top" alt="作品3">
-                  </a>
-              </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 shadow-sm">
+              <a href="img2/pto3.jpg" target="_blank">
+                <img src="img2/pto3.jpg" class="card-img-top" alt="作品3">
+              </a>
             </div>
-
-            <div class="col">
-              <div class="camera shadow-sm">
-                  <a href="img2/pto4.jpg" target="_blank">
-                    <img src="img2/pto4.jpg" class="card-img-top" alt="作品4">
-                  </a>
-              </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 shadow-sm">
+              <a href="img2/pto4.jpg" target="_blank">
+                <img src="img2/pto4.jpg" class="card-img-top" alt="作品4">
+              </a>
             </div>
-
+          </div>
 
           </div>
         </div>
@@ -230,21 +219,21 @@
             <h5 class="so1 text-center">MY GRAPHIC</h5>
         
             <div id="app5" class="container">
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-4">
-                    <!-- 使用 Vue 渲染动态内容 -->
-                    <div v-for="item in art2" :key="item.imgUrl" class="col">
-                        <div class="card hover-zoom shadow-sm">
-                            <a :href="item.imgUrl" target="_blank">
-                                <img :src="item.imgUrl" class="card-img-top" :alt="item.ins">
-                            </a>
-                            <div class="card-body bg-dark">
-                                <h5 class="card-title text-center">{{ item.h5 }}</h5>
-                                <p class="card-text text-center">{{ item.text }}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+              <div class="row g-4">
+                  <div v-for="item in art2" :key="item.imgUrl" class="col col-sm-12 col-md-6">
+                      <div class="card hover-zoom shadow-sm">
+                          <a :href="item.imgUrl" target="_blank">
+                              <img :src="item.imgUrl" class="card-img-top" :alt="item.ins">
+                          </a>
+                          <div class="card-body bg-dark">
+                              <h5 class="card-title text-center">{{ item.h5 }}</h5>
+                              <p class="card-text text-center">{{ item.text }}</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+             </div>
+          
         </div>
 
             
