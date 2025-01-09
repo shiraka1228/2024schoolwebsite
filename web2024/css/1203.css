@@ -3,7 +3,7 @@
      }
 
      .welcome {
-        padding-bottom: 50px
+        padding-bottom: 100px
      }
 
 
@@ -25,6 +25,8 @@
          padding-top: 150px;
          padding-bottom: 150px;
       }
+
+      
 
       .interduce h2{
          padding-top: 80px;
@@ -73,6 +75,11 @@
 
        .to ul li a:hover{
          color: rgb(255, 0, 111);
+       }
+
+       #carouselExample{
+         padding-bottom: 50px;
+
        }
 
        

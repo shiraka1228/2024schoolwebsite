@@ -39,3 +39,27 @@ createApp({
             });
     }
 }).mount("#app4");
+
+createApp({
+    data() {
+        return {
+            cma: [] // 初始化为空数组
+        };
+    },
+    mounted() {
+        // 使用 Fetch 从后端获取数据
+        fetch("/cm1")
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then((data) => {
+                this.cma = data; // 将后端返回的数据赋值给 art2
+            })
+            .catch((error) => {
+                console.error("加载数据失败:", error);
+            });
+    }
+}).mount("#app5");
